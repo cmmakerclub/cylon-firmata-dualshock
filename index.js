@@ -33,12 +33,12 @@ Cylon.robot({
     });
 
     ["square", "circle", "x", "triangle", "left", "right", "up", "down"].forEach(function(button) {
-    	my.controller.on(button + ":press", function() {
-    		console.log("Button " + button + " pressed."); 
+      my.controller.on(button + ":press", function() {
+        console.log("Button " + button + " pressed.");
          my.nat(value);
          value = (value == 0) ? 1 : 0;
-    	});
-		});
+      });
+    });
 
   }
 }).start();
